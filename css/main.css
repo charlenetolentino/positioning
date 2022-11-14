@@ -68,6 +68,103 @@ footer {
     padding: 1em;
 }
 
+/* start positioning css */
+
+
+
+/* Allows box to take up full space, ignoring padding/margin */
+* {
+    box-sizing: border-box;
+  }
+  
+ /* Create two equal columns that floats next to each other */
+ .my-column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    min-height: 300px; /* Can be removed. Only for demonstration */
+  }
+  
+   /* Clear floats after the columns */
+  .my-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  
+.text-align-center{
+    text-align:center;
+    background-color:aqua;
+ }
+  
+ .margin-auto > div{
+    margin:auto;
+    width:50%;
+    background-color:beige;
+    text-align:center;
+ } 
+
+
+/* start social */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+   .fa:hover {
+      opacity: 0.7;
+  }
+   .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+   .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+   .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+   .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+   .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  
+.social-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+ 
+/* end social */
+
+/* end positioning css */
+
+
+/* flexible image rules start here */
+.flexible img{
+    width:100%;
+ }
+  
+ .flexible{
+    display: flex;
+    justify-content: space-evenly;
+ }
+ /* flexible image rules end here */
+ 
+
+
 /* Responsive rules */
 
 /* DESKTOP */
@@ -129,5 +226,10 @@ footer {
     picture.profile img {
         width: 100%;
     }
+
+    /* used to re-position columns as vertical */
+    .my-column {
+        width: 100%;
+      } 
     
 }
